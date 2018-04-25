@@ -1,0 +1,157 @@
+form {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	width: 600px;
+  height: 410px;
+	background-color: #fff;
+	p {
+		margin: 0;
+	}
+}
+
+input[type=text] {
+	padding: 15px 20px;
+	width: 400px;
+	font-size: $fz+2px;
+	font-family: $ff_os;
+	border: 1px solid #000;
+} 
+
+input::-webkit-input-placeholder {
+	font-size: $fz+2px;
+	font-family: $ff_os;
+	color: #bfbfbf;
+}
+
+label {
+	font-size: $fz+2px;
+	font-family: $ff_os;
+	color: #bfbfbf;
+}
+
+label::before {
+	font-size: $fz+2px;
+	font-family: $ff_os;
+	color: #000;
+}
+
+input[name="name"] {
+  margin-top: 40px;
+}
+
+input[name="phone"] {
+  margin-top: 40px;
+  margin-bottom: 47px;
+}
+
+input[for="checkbox"] {
+  margin-bottom: 60px;
+}
+
+input[type="checkbox"] {
+  line-height: 2.1ex;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -999em;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+	margin: 0 15px 0 0;
+	content: "";
+	display: inline-block;
+	vertical-align: -17%;
+	height: 17px;
+	width: 17px;
+	background-color: white;
+	border: 1px solid #bfbfbf;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 6px;
+  background: #fff;
+  top: 7px;
+  left: 3px;
+  border: 1px solid #000;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-53deg);
+}
+
+
+.form__btn {
+	margin: 55px 0 0 0;
+	padding: 18px 63px;
+	font-size: $fz+4px;
+	font-family: $ff_os;
+	color: #fff;
+	background-color: #999999;
+}
+
+.bid-send {
+	display: none;
+	margin: auto;
+	text-align: center;
+	width: 670px;
+	height: 460px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color:$_bgc;
+	z-index: 1011;
+}
+
+
+
+.bid-send__title {
+  margin: 175px 0 44px 0;
+  font-family: Open Sans;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.bid-send__text {
+	font-family: $ff_os;
+	color:  #fff;
+	font-size: $fz+4px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.btn__push-close:before {
+  position: absolute;
+  right: 150px;
+  top: -25px;
+  margin: 0 auto;
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url(img/png/zakryt.png);
+  background-size: 100%;
+}
+
+textarea[type="text"] {
+  padding: 15px 20px;
+  width: 400px;
+  font-size: 18px;
+  font-family: Open Sans;
+  border: 1px solid #000;
+}

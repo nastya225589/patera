@@ -1,0 +1,49 @@
+/*scss*/
+$fz: 16px;
+$fz_2: 12px;
+$ff_os: Open Sans;
+$ff_m: Merriweather;
+$bgc: #f5f5f5;
+$_bgc: #465879;
+$_bgc_red: #8b0a11;
+
+.container {
+	width: 1400px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+@mixin btn($_bgc, $_fz) {
+	display: inline-block;
+  padding: 16px 22px;
+  font-size: $_fz;
+  color: #fff;
+  background-color: $_bgc;
+  text-decoration: none;
+  font-family: $ff_os;
+}
+
+@import 'header';
+@import 'advantages';
+@import 'bars';
+@import 'about-company';
+@import 'footer';
+@import 'tables';
+@import 'designers';
+@import 'contacts';
+@import 'price-installation';
+@import 'windowsill';
+@import 'kitchen';
+@import 'countertops';
+@import 'form';
+@import 'lattice';

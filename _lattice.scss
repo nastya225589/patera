@@ -1,0 +1,204 @@
+.lattice {
+	text-align: center;
+	background-color: $bgc;
+}
+
+.lattice__title {
+	padding: 130px 0 35px;
+	margin: 0;
+	font-family: $ff_m;
+	color: #303030;
+	font-size: $fz+32px;
+	font-weight: 700;	
+}
+
+.lattice__list {
+	display: flex;
+  justify-content: center;
+}
+
+.lattice__item {
+	position: relative;
+	margin-left: 55px;
+}
+
+.lattice__item:before {
+	content: "";
+	margin: auto;
+  top: 5px;
+  right: 350px;
+  position: absolute;
+  background: url('img/png/spritesheet2.png'); 
+  background-repeat: no-repeat;
+}
+
+.lattice__item-person:before { 
+	width: 35px;
+  height: 35px;
+  background-position: -62px -5px;
+	
+}
+
+.lattice__item-pattern:before {
+  width: 47px;
+  height: 35px;
+  background-position: -5px -5px;
+}
+
+.lattice__item {
+	width: 333px;
+	font-family: $ff_os;
+	color: #303030;
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: justify;
+
+
+	span {
+		color: #4e5a71;
+		font-family: $ff_os;
+		font-size: $fz+2px;
+		font-weight: 700;
+	}
+}
+
+.lattice__btn {
+	@include btn($_bgc_red, 22px);
+	padding: 22px 38px;
+	margin: 50px 0 85px;
+
+	&:hover {
+		background-color: $_bgc;
+	}
+}
+
+.lattice__block {
+	margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lattice__photo-img {
+	width: 440px;
+	height: 310px;
+}
+
+.lattice__photo-text {
+	margin: 5px 0 30px;
+	text-align: left;
+	font-family: $ff_os;
+	font-size: $fz+2px;
+	font-weight: 400;
+	color: #303030;
+}
+
+.lattice__push {
+	margin: 0 auto;
+	width: 740px;
+	height: 540px;
+	position: absolute;
+  top: 90%;
+	position: relative;
+	background-color: #fff;
+}
+
+.lattice__push-photo {
+	padding: 20px;
+	width: 700px;
+	height: 500px;
+	img {
+		width: 700px;
+		height: 500px;
+	}	
+}
+
+.lattice__push-text {
+	position: absolute;
+  top: 25px;
+	left: 27px;
+	margin: 20px;
+	font-family: $ff_os;
+	font-size: $fz+2px;
+	font-weight: 700;
+	color: #303030;
+}
+
+.content {
+	text-align: left;
+	position: relative;
+}
+
+.overlay_popup2 {
+	display:none;
+	position:fixed;
+	z-index: 999;
+	top:0;
+	right:0; 
+	left:0;
+	bottom:0;
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+.popup2 {
+	margin: auto;
+	display: none;
+	position: absolute;
+  left: 0;
+  right: 0;
+	z-index: 1000;
+  width:50%;
+}
+
+.lattice__push-close:before {
+	position: absolute;
+	right: -25px;
+  top: -25px;
+	margin: 0 auto;
+	content: "";
+	width: 30px;
+	height: 30px;
+	display: block;
+	background-image: url(img/png/zakryt.png);
+	background-size: 100%;
+}
+
+.tab_container {
+	padding-bottom: 120px;
+}
+
+.tabs {
+  margin: -25px 0 50px -25px;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.tabs li {
+  float: left;
+  border-bottom: none;
+  background: #fff;
+}
+
+.tabs li a {
+  display: block;
+  padding: 20px 20px;
+  font-size: $fz+2px;
+  font-family: $ff_os;
+  width: 435px;
+  color: #000;
+  text-decoration: none;
+}
+
+.tabs li.active a {
+  color: #fff;
+}
+   
+.tabs li.active, 
+.tabs li.active a:hover  {
+  background: #4e5a71;
+}
+
+
+
+

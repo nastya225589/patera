@@ -1,0 +1,60 @@
+.bars {
+	text-align: center
+}
+
+.bars__iner {	
+	margin: 40px 20px;
+	background-color: #fff;
+	display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bars__item {
+	position: relative;
+	width: 440px;
+	height: 310px;
+	margin-bottom: 20px;
+}
+
+.bars__item_title {
+	margin: 0px 0 22px;
+	font-family: $ff_m;
+	color:  #303030;
+	font-size: $fz+14px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.bars__item_text {
+	margin: 0 0 24px;
+	font-family: $ff_os;
+	color:  #656464;
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+}	
+
+.bars__item-photo_text {
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0 10px 10px;
+	font-family: $ff_os;
+	color:  #303030;
+	font-size: $fz+2px;
+	font-weight: 400;
+	text-align: left;
+}
+
+.bars__btn {
+	@include btn($_bgc, 16px);
+	padding: 18px 65px;
+	margin-bottom: 75px;
+
+	&:hover {
+		background-color: $_bgc_red;
+	}		
+}

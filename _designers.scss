@@ -1,0 +1,40 @@
+.header_img {
+	border-bottom: 2px solid #dcdcdc;
+	background-color:  #ffffff;
+}
+
+.designers {
+	text-align: center;
+	background-color: $bgc;
+}
+
+.designers__title {
+	padding: 130px 0 35px;
+	margin: 0;
+	font-family: $ff_m;
+	color: #303030;
+	font-size: $fz+32px;
+	font-weight: 700;		
+}
+
+.designers__text {
+	padding-bottom: 25px;
+	margin: auto;
+	width: 755px;
+	font-family: $ff_os;
+	color: #303030;
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 26px;
+	text-align: left;
+}
+
+.designers__btn {
+	@include btn($_bgc_red, 22px);
+	padding: 22px 38px;
+	margin: 30px 0 120px;
+
+	&:hover {
+		background-color: $_bgc;
+	}
+}

@@ -1,0 +1,33 @@
+.contacts {
+	text-align: center;
+	background-color: $bgc;
+}
+
+.contacts__title {
+	padding: 130px 0 35px;
+	margin: 0;
+	font-family: $ff_m;
+	color: #303030;
+	font-size: $fz+32px;
+	font-weight: 700;		
+}
+
+.contacts__item {
+	width: 1132px;
+	margin: auto;
+	font-family: $ff_os;
+	color: #303030; 
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 22px;
+	text-align: left;
+	padding-bottom: 25px;
+}
+
+.contacts__number_mail {
+	color: #303030; 
+}
+
+.contacts__map {
+	margin: 25px 0 120px;
+}

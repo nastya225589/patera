@@ -1,0 +1,201 @@
+
+#headerMain {
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+#headerMain.default {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 2px solid #dcdcdc;
+  background: #fff;
+}
+
+.header {
+	background-image: url("img/glav_photo/promo.jpg");
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+
+.header__iner {
+	padding: 15px 21px 24px;
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+	font-family: $ff_os;
+	font-size: $fz_2;	
+	margin-top: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+
+.main-nav__list {
+	margin: 0;
+	display: flex;
+}
+
+.main-nav__item {
+	position: relative;
+	margin-left: 40px;
+}
+                               
+.main-nav__item:nth-child(1) {
+	margin-left: 0;
+}
+
+.main-nav__link {
+	line-height: 16px;
+	color: #383838;
+
+	span {
+		display: block;
+	}
+}
+
+.main-nav__toggle {
+	position: absolute;
+  top: 3px;
+  right: -13px;
+	background-image: url(img/png/raskryvashka.png);
+  width: 11px;
+  height: 9px;
+}
+
+.main-nav__list-par {
+	display: none;
+}
+
+.main-nav__list-par_activ >.main-nav__list-par {
+  display: block;
+  .main-nav__toggle {
+    transform: rotate(180deg);
+	}
+}
+
+.main-nav__list-par_activ >.main-nav__toggle {
+  transform: rotate(180deg);
+}
+
+.main-nav__list-par {
+  width: 145px;
+  position: absolute;
+  top: 25px;
+  left: -18px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.main-nav__item-par {
+	margin-bottom: 20px;
+}
+
+.main-nav__link-par {
+	font-family: $ff_os;
+	font-size: $fz_2+2px;
+	color: #909090;
+	font-weight: 600;
+	line-height: 18px;
+	text-transform: initial;
+	padding-bottom: 15px;
+
+	&:hover {
+  	color: #465879;
+  }
+}
+
+
+.header__number {
+	font-family: $ff_os;
+	font-size: $fz+3px;	
+	color: #383838;
+	font-weight: 900;
+}
+
+.header__btn {
+	@include btn($_bgc, 13px);
+
+	&:hover {
+		background-color: $_bgc_red;
+	}	
+}
+
+.promo {
+	display: block;
+}
+
+.promo__block {
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.promo__title {
+	text-align: left;
+	font-size: $fz+38px;
+	font-weight: 700;
+	width: 934px;
+	color: #fff;
+	padding: 215px 0 65px;
+	margin: 0 auto;
+}
+
+.promo__btn {
+	@include btn($_bgc_red, 22px);
+	padding: 22px 38px;
+
+	&:hover {
+		background-color: $_bgc;
+	}	
+}
+
+
+
+
+
+
+
+
+
+.overlay_popup3 {
+	display:none;
+	position:fixed;
+	z-index: 999;
+	top:0;
+	right:0; 
+	left:0;
+	bottom:0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup3 {
+	margin: auto;
+	display: none;
+	position: absolute;
+  left: 0;
+  right: 0;
+	z-index: 1000;
+  width:50%;
+}
+
+.btn__push-close:before {
+	position: absolute;
+  right: 98px;
+  top: -40px;
+	margin: 0 auto;
+	content: "";
+	width: 50px;
+	height: 50px;
+	display: block;
+	background-image: url(img/png/zakryt.png);
+	background-size: 100%;
+}

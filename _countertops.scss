@@ -1,0 +1,172 @@
+.countertops {
+	text-align: center;
+	background-color: $bgc;
+}
+
+.countertops__title {
+	padding: 130px 0 35px;
+	margin: 0;
+	font-family: $ff_m;
+	color: #303030;
+	font-size: $fz+32px;
+	font-weight: 700;	
+}
+
+.countertops__text {
+	padding-bottom: 25px;
+	margin: auto;
+	width: 805px;
+	font-family: $ff_os;
+	color: #303030;
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.countertops__text:nth-child(2n+1) {
+	padding-bottom: 0;
+}
+
+.countertops__btn {
+	@include btn($_bgc_red, 22px);
+	padding: 22px 38px;
+	margin: 60px 0 70px;
+
+	&:hover {
+		background-color: $_bgc;
+	}
+}
+
+
+
+.tables-push {
+	position: absolute;
+  top: 90%;
+	display: inline-block;
+	width: 900px;
+	height: 540px;
+	background-color: #fff;
+}
+
+.tables-push__photo {
+	width: 500px;
+	height: 500px;
+	margin: 20px 20px 12px;
+	float: left;
+}
+
+.tables-push__description {
+	margin-left: 14px;
+	text-align: left;
+	float: left;
+	width: 20%;
+}
+
+.tables-push__description-name {
+	width: 100px;
+	font-family: $ff_os;
+	color:  #303030;
+	font-size: $fz+8px;
+	font-weight: 700;
+	text-align: left;
+
+	span {
+		font-weight: 400;
+	}
+}
+
+.tables-push__description-feature {
+	margin: 20px 0 20px 0;
+	width: 230px;
+	font-family: $ff_os;
+	color:  #656464;
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.tables-push__description-price {
+	margin-bottom: 30px;
+	font-family: $ff_os;
+	color:  #303030;
+	font-size: $fz+8px;
+	font-weight: 700;
+}
+
+.tables-push__description-text {
+	margin-bottom: 20px;
+	width: 277px;
+	font-family: $ff_os;
+	color:  #656464;
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+
+
+.tables-push__description-btn {
+	@include btn(#8b0a11, 18px);
+	padding: 18px 75px;
+	margin: 25px 0;
+
+	&:hover {
+		background-color: $_bgc;
+	}
+}
+
+.tables__btn {
+	@include btn($_bgc, 18px);
+	padding: 18px 65px;
+	margin-top: 90px;
+	margin-bottom: 120px;
+
+	&:hover {
+		background-color: $_bgc_red;
+	}
+}
+
+button {
+	padding: 0;
+	background: none;
+  border: 0;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.content {
+	text-align: left;
+	position: relative;
+}
+
+.overlay_popup {
+	display:none;
+	position:fixed;
+	z-index: 999;
+	top:0;
+	right:0; 
+	left:0;
+	bottom:0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.popup {
+	display: none;
+	position: absolute;
+  left: 0;
+  right: 0;
+	z-index: 1000;
+  width:50%;
+}
+
+.tables-push {
+	width: 900px;
+	height: 540px;
+	background-color: #fff;
+}
+
+
+
+

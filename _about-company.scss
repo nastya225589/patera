@@ -1,0 +1,73 @@
+.about-company {
+	text-align: center;
+	background-image: url("img/glav_photo/about-company.jpg");
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+
+.about-company__item {
+	text-align: left;
+	p {
+		margin: 0;
+		padding-bottom: 20px;
+		width: 473px;
+		font-family: $ff_os;
+		color:  #fff;
+		font-size: $fz;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	span {
+		font-weight: 700;
+	}
+}
+
+.about-company__item p:nth-child(3) {
+	padding-bottom: 0;
+}
+
+.about-company__iner {
+  max-width: 575px;
+  margin-left: auto;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.about-company__title {
+	padding: 40px 0 20px;
+  margin: 0;
+	font-family: $ff_m;
+	color:  #586680;
+	font-size: $fz+44px;
+	font-weight: 700;
+	text-shadow: 0px 3px 26.24px rgba(0, 0, 0, 0.08);
+
+	span {
+		font-size: $fz+20px;
+	}
+}
+
+.about-company__title-sm {
+	padding: 30px 0 20px;
+	font-size: $fz+20px;
+}
+
+.about-company__onwards {
+	font-family: $ff_os;
+	color:  #5e7db6;
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+.about-company__btn {
+	@include btn($_bgc_red, 16px);
+	padding: 15px 35px;
+	margin: 35px 0;
+
+	&:hover {
+		background-color: $_bgc;
+	}	
+}

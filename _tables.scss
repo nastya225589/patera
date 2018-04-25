@@ -1,0 +1,144 @@
+.tables {
+	text-align: center;
+	background-color: $bgc;
+}
+
+.tables__title {
+	margin: 0;
+  padding: 70px 0 30px;
+	font-family: $ff_m;
+	color:  #303030;
+	font-size: $fz+14px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.tables__text {
+	width: 676px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	font-family: $ff_os;
+	color:  #656464;
+	font-size: $fz;
+	line-height: 24px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.tables__text:nth-child(2n+1) {
+	padding-bottom: 45px;
+}
+
+.tables__block {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tables__block:nth-child(4) {
+	padding-bottom: 100px;
+}
+
+.tables__block-index:nth-child(4) {
+	padding-bottom: 0;
+}
+
+.tables__style {
+	margin-bottom: 40px;
+	width: 440px;
+	height: 540px;
+	background-color: #fff;
+
+	&:hover {
+		box-shadow: 0px 1px 18px 6px rgba(0, 0, 0, 0.14);
+	}
+}
+
+.tables__style-index {
+	margin-bottom: 0;
+}
+
+.tables__style_photo {
+	margin: 20px 20px 12px;
+	width: 400px;
+	height: 400px;
+}
+
+.tables__style_text {
+	float: left;
+	width: 100%;
+}
+
+.tables__style_text-name {
+	float: left;
+	width: 80%;
+	margin: 0 20px 15px 20px;
+	font-family: $ff_os;
+	color:  #303030;
+	font-size: $fz+2;
+	font-weight: 700;
+	text-align: left;
+
+	span {
+		font-weight: 400;
+	}
+}
+
+.tables__style_text-price {
+	float: right;
+	margin: 0 20px;
+	font-family: $ff_os;
+	color:  #303030;
+	font-size: $fz+2;
+	font-weight: 700;
+	text-align: left;
+}
+
+.tables__style_text-feature {
+	float: left;
+	width: 50%;
+	margin: 0 20px;
+	width: 205px;
+	font-family: $ff_os;
+	color:  #656464;
+	font-size: $fz;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.tables__style_text-btn {
+	float: right;
+	@include btn(#8b0a11, 14px);
+	padding: 10px 35px;
+	margin: 8px 20px 15px;
+
+	&:hover {
+		background-color: $_bgc;
+	}
+}
+
+.tables__btn {
+	@include btn($_bgc, 18px);
+	padding: 18px 65px;
+	margin-top: 90px;
+	margin-bottom: 120px;
+
+	&:hover {
+		background-color: $_bgc_red;
+	}
+}
+
+
+.tables-push__close:before {
+	position: absolute;
+	right: -25px;
+  top: -25px;
+	margin: 0 auto;
+	content: "";
+	width: 30px;
+	height: 30px;
+	display: block;
+	background-image: url(img/png/zakryt.png);
+	background-size: 100%;
+}
+

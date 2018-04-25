@@ -1,0 +1,137 @@
+// .footer {
+//     position:fixed;
+//     left:0px;
+//     bottom:0px;
+//     height:30px;
+//     width:100%;
+//     background:#999;
+// }
+
+.footer {
+	padding: 100px 0 90px;
+	background-color: #313131;
+	font-size: $fz+2px;
+	font-family: $ff_os;
+	color: #fff;
+	font-weight: 400;
+	text-align: left;
+}
+
+.footer__container {
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__contacts-list {
+	margin: 0;
+	width: 221px;
+}
+
+.footer__contacts-number_mail {
+	font-weight: 700;
+	color: #fff;
+	font-size: $fz;
+	font-family: $ff_os;
+}
+
+.footer__contacts-item {
+	margin-bottom: 22px;
+	&:nth-child(4) {
+		margin-bottom: 0;
+	}
+	.footer__contacts-number {
+		font-size: $fz+4px;
+	}
+}
+
+.footer__main {
+	margin-top: 16px;
+}
+
+.footer__main__item {
+	width: 245px;
+	margin-bottom: 22px;
+}
+
+.footer__main__link {
+	color: #fff;
+}
+
+.footer__main2 {
+	margin-top: 16px;
+	.footer__main__item {
+		width: 162px;
+	}
+}
+
+.footer__btn {
+	@include btn($_bgc, 13px);	
+
+	&:hover {
+		background-color: $_bgc_red;
+	}
+}
+
+.footer__social {
+	margin-top: 50px;
+	margin-bottom: 55px;
+}
+
+.footer__social-list {
+	li {
+		height: 25px;
+		display: inline-block;
+	}
+}
+
+.footer__social-link {
+	position: relative;
+	margin-left: 39px;
+}
+
+.footer__social-link:before {
+	content: "";
+	margin: auto;
+  bottom: 0;
+  right: 0;
+  top: 5px;
+  position: absolute;
+  background: url('img/png/spritesheet.png'); 
+  background-repeat: no-repeat;
+}
+
+.footer__social-link--instagram:before {
+	width: 25px;
+  height: 25px;
+  background-position: -65px -40px;
+}
+
+.footer__social-link--facebook:before {
+  width: 25px;
+  height: 25px;
+  background-position: -65px -5px;
+}
+
+.footer__social-link--vk:before {
+  width: 25px;
+  height: 25px;
+  background-position: -40px -75px;
+}
+
+.footer__social-link--odnaklass:before {
+  width: 25px;
+  height: 25px;
+  background-position: -5px -75px;
+}
+
+.footer__social-block {
+	text-align: right;
+	p {
+		margin: 0;
+		color:  #808080;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+	}
+}
